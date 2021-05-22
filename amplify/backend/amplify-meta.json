@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cloudv-dev-220412-authRole",
+      "UnauthRoleArn": "arn:aws:iam::964823281757:role/amplify-cloudv-dev-220412-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::964823281757:role/amplify-cloudv-dev-220412-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cloudv-dev-220412-deployment",
+      "UnauthRoleName": "amplify-cloudv-dev-220412-unauthRole",
+      "StackName": "amplify-cloudv-dev-220412",
+      "StackId": "arn:aws:cloudformation:us-east-1:964823281757:stack/amplify-cloudv-dev-220412/a6b58550-b85f-11eb-83cd-123e22873efd",
+      "AmplifyAppId": "dfwq8e7k586al"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "CloudFrontSecureURL": "https://dytlt0venc1ki.cloudfront.net",
+        "S3BucketSecureURL": "https://cloud-20210518220832-hostingbucket-dev.s3.amazonaws.com",
+        "CloudFrontOriginAccessIdentity": "E3ASRHL6T6OLYF",
+        "WebsiteURL": "http://cloud-20210518220832-hostingbucket-dev.s3-website-us-east-1.amazonaws.com",
+        "CloudFrontDistributionID": "E346H8YJHA90NX",
+        "Region": "us-east-1",
+        "HostingBucketName": "cloud-20210518220832-hostingbucket-dev",
+        "CloudFrontDomainName": "dytlt0venc1ki.cloudfront.net"
+      },
+      "lastPushTimeStamp": "2021-05-22T14:53:01.094Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudv-dev-220412-deployment/amplify-cfn-templates/hosting/template.json",
+        "logicalId": "hostingS3AndCloudFront"
+      }
+    }
+  },
+  "auth": {
+    "cloudvc62e0284": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-1_uQDzNL7fo",
+        "AppClientIDWeb": "6cip4fvegouuecuqqgr7v0l0pb",
+        "AppClientID": "7nvuhg377mflj3fc66vfgo4fak",
+        "IdentityPoolId": "us-east-1:1aadccb9-f7c1-492e-96aa-941639b65c0b",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:964823281757:userpool/us-east-1_uQDzNL7fo",
+        "IdentityPoolName": "cloudvc62e0284_identitypool_c62e0284__dev",
+        "UserPoolName": "cloudvc62e0284_userpool_c62e0284"
+      },
+      "lastPushTimeStamp": "2021-05-22T14:53:01.100Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudv-dev-220412-deployment/amplify-cfn-templates/auth/cloudvc62e0284-cloudformation-template.yml",
+        "logicalId": "authcloudvc62e0284"
+      }
+    }
+  }
+}
